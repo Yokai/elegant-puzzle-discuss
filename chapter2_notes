@@ -1,0 +1,23 @@
+Thoughts on an elegant Puzzle
+
+1 - much of this seems to map with Bernstein's Theory of Group Dynamics.  (Abelson and Bernstein 1963, 1967 et al. viz https://academic.oup.com/poq/article-abstract/27/1/93/1816860?redirectedFrom=fulltext ) 
+
+2 - I cannot agree more with Will that "Most folks find being on-call for components that they're unfamiliar with to be disproportionately stressful."
+
+3 - Keep Innovation and Maintenance together.  The corollary is of course that teams that are building replacement services should maintain the existing service.  This means that the problems that the existing service exhibits should be reduced in the new replacement service because the painpoints are more visible.
+
+4 - Really wanted to see the users POV in the paying down tech debt and innovation stages of the four stages of a team.  In my experience, in the third stage, (paying down tech debt) consumers of the team's output become more vocal again.  Usually voicing dissatisfaction that progress on features is not being made.  In the Resilience world, this is a huge part of the pressure placed on the SRE/Resilience team.  The Resilience team is seen to be slowing feature production rather than enabling it.  I would love to see some examples of how the group has successfully managed this in the past.  It is kinda mentioned in the system fix portion, but I think we need to get more in depth here.   
+
+5 - Note: Back to Bernstein - one of the facets of an organization or team is that it exists as its own animal, thereby changing the goal as the original goal is approached.  
+
+6 - LOVE the automation of the ad-hoc / interrupt driven piece - this is something that I need to bring to my Senior Leadership team ... we try to use the oncall for this piece of triage/interript avoidance.  
+
+7 - Documentation helps reducing interruptions - how to bring about a documentation/reading culture.  We've noticed that this is a very difficult problem, and have some ideas.  Taking from the "deploy and support your own stuff" model we are moving to present documentation on a document release cycle for engineering.  But, one of the problems heere is that the Deploy and Support your own stuff model means that the documentation for that stuff is held by the team, not widely available.  How to get past that?
+
+8 - Action Item: Who owns X?  MOving registry?  Define this from current documentation
+
+9 - The "say no" portion.  Rather than saying "no" I've found that the "what are you trying to achieve?"  question illicits 2 distinct type of response.  a - it clearly creates a set of requirements  or b - it has the customer realizes that the ask is not specific enough, overly implementation heavy (do x rather than provide me with result r), or worse - not a refactor but a band-aid.   Asking "what are you trying to achieve?" also builds in a little bit of designed slack.  i.e. When you ask that question, you get a reasonable idea of what the project in question is likely to be, but get time when the request is refactored to adjust priorities.
+
+10 - Remaining emotionally involved - this is a really good point that is hidden in the drive for directive text.  The best managers care about the health of their team and the health of their organization; NOT just the productivity of the team or the latest piece of work.  They listen to the team, taking direction from and giving direction to members, and look out for how the team functions.  This emotional connection is what separates a good manager from a glorified project manager.
+
+11 - A great fear of managers is having someone be able to do their role because it makes them insecure about their position.  Most of these managers do a couple of common things.  a) they hoard information/decision making and b) they exhibit micromanagement behaviors.  Learning how to do succession planning is tough, but anyone who takes on your role, is necessarily going to leave behind parts/all of their current tasks.  A Person who is ready to take on some/all of the tasks of the manager also needs to be coached in spreading the knowledge to the team (back to documentation).   This also frees the insecure manager up to being able to work better with their peers, manage up and improve/streamline the team's work responsibilities.
